@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peer Chat</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="joinAndCreate">
+        <div class="yourId">Your Id: Loading...</div>
+
+        <div class="join">
+            <input id="nickname" placeholder="Your Nickname" type="text">
+            <input id="join" type="text">
+            <button id="joinBtn">Join</button>
+        </div>
+    </div>
+
+    <div class="screenCenter">
+        <div class="chat">
+            <div class="container">
+                <p>Not Connected!</p>
+                <span class="time-left">PeerChat</span>
+            </div>
+            <!-- 
+        <div class="container darker">
+            <p>Hey! I'm fine. Thanks for asking!</p>
+            <span class="time-left">11:01</span>
+        </div>
+
+        <div class="container">
+            <p>Sweet! So, what do you wanna do today?</p>
+            <span class="time-right">11:02</span>
+        </div>
+
+        <div class="container darker">
+            <p>Nah, I dunno. Play soccer.. or learn more coding perhaps?</p>
+            <span class="time-left">11:05</span>
+        </div> -->
+        </div>
+        <div class="footer">
+            <input id="msg" type="text">
+            <button id="send">Send</button>
+        </div>
+    </div>
+
+
+
+
+    <script src="./peerjs.js"></script>
+
+    <script src="./index.js"></script>
+</body>
+
+</html>

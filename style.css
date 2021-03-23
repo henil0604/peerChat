@@ -1,0 +1,117 @@
+* {
+  /* margin: 0; */
+  /* padding: 0; */
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.joinAndCreate {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 10px;
+}
+
+.joinAndCreate input {
+  margin: 10px 10px;
+}
+
+.joinAndCreate .yourId {
+  margin: 10px 20px;
+}
+
+.screenCenter {
+  width: 70%;
+  height: 70%;
+}
+
+.screenCenter .chat {
+  width: 100%;
+  height: calc(100% - 50px);
+  overflow-y: scroll;
+}
+
+.screenCenter .footer {
+  width: 100%;
+  height: 40px;
+  background-color: aqua;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer input {
+  width: 100%;
+  height: 100%;
+  font-size: 20px;
+}
+
+.footer button {
+  width: 60px;
+  height: 100%;
+}
+
+/* Chat containers */
+.container {
+  border: 2px solid #dedede;
+  background-color: #f1f1f1;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+/* Darker chat container */
+.darker {
+  border-color: #ccc;
+  background-color: #ddd;
+}
+
+/* Clear floats */
+.container::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Style images */
+.container img {
+  float: left;
+  max-width: 60px;
+  width: 100%;
+  margin-right: 20px;
+  border-radius: 50%;
+}
+
+/* Style the right image */
+.container img.right {
+  float: right;
+  margin-left: 20px;
+  margin-right: 0;
+}
+
+/* Style time text */
+.time-right {
+  float: right;
+  color: #aaa;
+}
+
+/* Style time text */
+.time-left {
+  float: left;
+  color: #999;
+}
+
+@media only screen and (max-width: 700px) {
+}
